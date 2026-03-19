@@ -5,7 +5,6 @@ authors = [{ name = "PyWhy contributors" }]
 description = "This package contains several methods for calculating Conditional Average Treatment Effects"
 readme = "README.md"
 keywords = ["treatment-effect"]
-license = "MIT"
 dynamic = ["version"]
 
 classifiers = [

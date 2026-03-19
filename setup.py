@@ -5,11 +5,13 @@ import os
 import re
 from glob import glob
 
-with open(os.path.join(os.path.dirname(__file__), "econml", "_version.py")) as file:
-    for line in file:
-        m = re.fullmatch("__version__ = '([^']+)'\n", line)
-        if m:
-            version = m.group(1)
+# with open(os.path.join(os.path.dirname(__file__), "econml", "_version.py")) as file:
+#     for line in file:
+#         m = re.fullmatch("__version__ = '([^']+)'\n", line)
+#         if m:
+#             version = m.group(1)
+
+version = '0.16.0+gdaiha.1'
 
 pyx_files = glob("econml/**/*.pyx", recursive=True)
 c_files = glob("econml/**/*.c", recursive=True)
