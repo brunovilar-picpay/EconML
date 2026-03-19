@@ -65,11 +65,11 @@ all = [
 
 [build-system]
 requires = [
-    "setuptools",
-    "wheel",
+    "setuptools>=68.0",
+    "wheel>=0.41",
     "numpy>=2,<3",
     "scipy",
-    "cython"
+    "cython>=3.0"
 ]
 build-backend = "setuptools.build_meta"
 
